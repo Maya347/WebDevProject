@@ -4,9 +4,10 @@ body {
     font-variant: small-caps;
 }
 
-h1 {
+h1, h2 {
     background-color: #da66da;
     text-align: center;
+    box-shadow: inset 0 0 0 2px #ecec09;
 
 }
 
@@ -15,7 +16,16 @@ img {
     float: left;
 }
 
-.handstand {
-    background-color: #da66da;
-    text-align: center;
+ul > li{
+    list-style-type:square;
 }
+
+#handstand {
+    
+   font: 200;
+}
+
+a:hover {
+    color: #ecec09;
+  }
+  
