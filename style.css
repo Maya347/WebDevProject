@@ -4,6 +4,10 @@ body {
     background-color: hwb(300 64% 11%);
 }
 
+strong {
+    font-weight: bold !important;
+}
+
 h1,
 h2 {
 
@@ -35,19 +39,56 @@ a:hover {
 img {
     border-radius: 20%;
     height: 100%;
+
+}
+
+/* Nav Menu*/
+
+#nav_menu {
+
+    display: flex;
+    align-self: center;
+    list-style-type: none;
+    padding: 10px;
+    font-size: larger;
+}
+
+#nav_menu li {
+    flex-basis: 33%;
+}
+
+#nav_menu li a:hover {
+    color: #ecec09;
+}
+
+#nav_menu li a {
+    text-align: center;
+    display: block;
+    padding: 3% 1%;
+    background-color: rgb(167, 30, 167);
+    color: #ffffff;
+    font-weight: bold;
+    border-right: 3px solid #ffffff;
+}
+
+#nav_menu li a.lastitem {
+    border-right: none;
 }
 
 /*Main Page*/
 
 .mainall {
+    display: flex;
+    flex-direction: column;
     background-color: hwb(300 23% 0%);
-    margin: 0% 30%;
     color: #ffffff;
+    margin: 0% 30%;
 }
 
 .mainall img {
     padding: 2% 15%;
     width: 70%;
+    height: auto;
 }
 
 .mainpage {
@@ -59,6 +100,103 @@ img {
 
 .words {
     padding: 1% 15%;
+}
+
+#one,
+#two,
+#three,
+#four {
+    flex-basis: 25%;
+}
+
+/*Stretches*/
+#grid {
+    width: 98;
+    padding-bottom: 4%;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 16px;
+    grid-template-areas:
+        "dwd stp sip"
+        "lng mlg wfs"
+        "ssp msp msp"
+        "shs wrs brg";
+}
+
+#grid img {
+    clear: both;
+    max-width: 30%;
+    height: 98%;
+    margin: 2px;
+}
+
+#grid p {
+    width: 65%;
+    float: right;
+    font-size: larger;
+}
+
+#downward_dog {
+    clear: both;
+    grid-area: dwd;
+}
+
+#standing_pike {
+    grid-area: stp;
+}
+
+#sitting_pike {
+    grid-area: sip;
+}
+
+#lunge {
+    grid-area: lng;
+}
+
+#modified_lunge {
+    grid-area: mlg;
+}
+
+#wolfe_stretch {
+    grid-area: wfs;
+}
+
+#side_splits {
+    grid-area: ssp;
+}
+
+#middle_splits {
+    grid-area: msp;
+}
+
+#bridge {
+    grid-area: brg;
+}
+
+#shoulder_stretch {
+    grid-area: shs;
+}
+
+#wrists {
+    grid-area: wrs;
+}
+
+
+#downward_dog,
+#standing_pike,
+#sitting_pike,
+#lunge,
+#modified_lunge,
+#wolfe_stretch,
+#side_splits,
+#middle_splits,
+#bridge,
+#shoulder_stretch,
+#wrists {
+    margin: 10px;
+    border: double #ecec09;
 }
 
 /*Handstand Tips*/
@@ -101,41 +239,6 @@ img {
     margin: 5px;
 }
 
-/* Nav Menu*/
-
-#nav_menu{
-    margin: 2px  30px;
-}
-
-#nav_menu ul {
-    align-self: center;
-    list-style-type: none;
-    width: 95%;
-}
-
-#nav_menu ul li {
-    float: left;
-    width: 33%;
-}
-
-#nav_menu ul li a:hover {
-    color: #ecec09;
-}
-
-#nav_menu ul li a {
-    text-align: center;
-    display: block;
-    padding: 3% 1%;
-    background-color: rgb(167, 30, 167);
-    color: #ffffff;
-    font-weight: bold;
-    border-right: 3px solid #ffffff;
-}
-
-#nav_menu ul li a.lastitem {
-    border-right: none;
-}
-
 /*Media Queries*/
 
 @media screen and (max-width:1210px) {
@@ -170,6 +273,32 @@ img {
     #balance {
         margin: 20px;
         padding: 5% 30%;
+    }
+
+}
+
+@media screen and (max-width:1440px) {
+    #grid {
+        width: 98%;
+        padding: 1%;
+        height: 3100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 2%;
+
+    }
+
+    #grid img {
+        clear: both;
+        max-width: 100%;
+        height: 50%;
+        margin: 2px;
+    }
+
+    #grid p {
+        width: 100%;
+        float: none;
     }
 
 }
