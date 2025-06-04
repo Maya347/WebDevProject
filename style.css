@@ -82,7 +82,7 @@ img {
     flex-direction: column;
     background-color: hwb(300 23% 0%);
     color: #ffffff;
-    margin: 0% 30%;
+    margin: 0% 20%;
 }
 
 .mainall img {
@@ -216,7 +216,7 @@ img {
 #balance img {
     float: left;
     margin: 5px;
-    width:100%;
+    width: 100%;
 }
 
 #wall p,
@@ -242,6 +242,9 @@ img {
 
 /*Media Queries*/
 
+
+/*Handstands*/
+
 @media screen and (max-width:1210px) {
 
     #wall p,
@@ -263,7 +266,7 @@ img {
     }
 
     #wall img {
-        clear:both;
+        clear: both;
         padding: 10%;
     }
 }
@@ -283,11 +286,13 @@ img {
 
     #wall img,
     #shoulders img,
-    #balance img{
-       width: 100%;
+    #balance img {
+        width: 100%;
     }
 
 }
+
+/*Stretches*/
 
 @media screen and (max-width:1440px) {
     #grid {
@@ -298,6 +303,7 @@ img {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 2%;
+      
 
     }
 
@@ -312,5 +318,52 @@ img {
         width: 100%;
         float: none;
     }
+
+}
+
+@media screen and (max-width:1130px) {
+    #grid {
+        width: 98%;
+        padding: 1%;
+        height: 3100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        grid-gap: 2%;
+         grid-template-areas:
+            "dwd"
+            "stp"
+            "sip"
+            "lng"
+            "mlg"
+            "wfs"
+            "ssp"
+            "msp"
+            "shs"
+            "wrs"
+            "brg";
+
+    }
+
+    #grid img {
+        clear: both;
+        max-width: 100%;
+        height: 50%;
+        margin: 2px;
+    }
+
+    #grid p {
+        width: 100%;
+        float: none;
+    }
+
+}
+
+/*Main Page*/
+
+@media screen and (max-width:1120px) {
+   .mainall {
+    margin: 0% 10%;
+}
 
 }
