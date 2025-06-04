@@ -216,6 +216,7 @@ img {
 #balance img {
     float: left;
     margin: 5px;
+    width:100%;
 }
 
 #wall p,
@@ -262,6 +263,7 @@ img {
     }
 
     #wall img {
+        clear:both;
         padding: 10%;
     }
 }
@@ -273,6 +275,16 @@ img {
     #balance {
         margin: 20px;
         padding: 5% 30%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    #wall img,
+    #shoulders img,
+    #balance img{
+       width: 100%;
     }
 
 }
