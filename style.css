@@ -57,7 +57,7 @@ img {
 }
 
 #nav_menu li {
-    flex-basis: 33%;
+    flex-basis: 25%;
 }
 
 #nav_menu li a:hover {
@@ -204,9 +204,9 @@ img {
 
 /*Handstand Tips*/
 
-#wall,
-#shoulders,
-#balance {
+#tip1,
+#tip2,
+#tip3 {
     font: 200;
     background-color: #ecec09;
     border-radius: 123%;
@@ -214,32 +214,32 @@ img {
     padding: 5% 30%;
 }
 
-#wall img,
-#shoulders img,
-#balance img {
-    float: left;
+#tip1 img,
+#tip2 img,
+#tip3 img {
     margin: 5px;
-    width: 100%;
+    width: 90%;
 }
 
-#wall p,
-#wall h3,
-#wall ul {
-    padding-left: 250px;
+
+#tip1 p,
+#tip1 h3,
+#tip1 ul {
+    padding-left: 15%px;
 }
 
-#shoulders p,
-#shoulders h3,
-#shoulders ul,
-#balance p,
-#balance h3,
-#balance ul {
-    padding-left: 350px;
+#tip2 p,
+#tip2 h3,
+#tip2 ul,
+#tip3 p,
+#tip3 h3,
+#tip3 ul {
+    padding-left: 15%;
 }
 
-#wall ul li,
-#shoulders ul li,
-#balance ul li {
+#tip1 ul li,
+#tip2 ul li,
+#tip3 ul li {
     margin: 5px;
 }
 
@@ -250,35 +250,32 @@ img {
 
 @media screen and (max-width:1210px) {
 
-    #wall p,
-    #wall h3,
-    #wall ul {
-        padding: 2%;
-        clear: both;
+    #tip1 p,
+    #tip1 h3,
+    #tip1 ul {
+        padding: 2%
     }
 
-    #shoulders p,
-    #shoulders h3,
-    #shoulders ul,
-    #balance p,
-    #balance h3,
-    #balance ul {
+    #tip2 p,
+    #tip2 h3,
+    #tip2 ul,
+    #tip3 p,
+    #tip3 h3,
+    #tip3 ul {
         padding: 2%;
         border-radius: 20%;
-        clear: both;
     }
 
-    #wall img {
-        clear: both;
+    #tip1 img {
         padding: 10%;
     }
 }
 
 @media screen and (max-width:900px) {
 
-    #wall,
-    #shoulders,
-    #balance {
+    #tip1,
+    #tip2,
+    #tip3 {
         margin: 20px;
         padding: 5% 30%;
     }
@@ -287,9 +284,9 @@ img {
 
 @media screen and (max-width:600px) {
 
-    #wall img,
-    #shoulders img,
-    #balance img {
+    #tip1 img,
+    #tip2 img,
+    #tip3 img {
         width: 100%;
     }
 
