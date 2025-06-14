@@ -1,5 +1,5 @@
 body {
-     font-family: "Sour Gummy", sans-serif;
+    font-family: "Sour Gummy", sans-serif;
     font-weight: 1;
     font-style: normal;
     background-color: hwb(300 64% 11%);
@@ -19,8 +19,8 @@ h2 {
     margin-top: 60px;
     background: linear-gradient(to right, hwb(300 34% 0%), rgb(167, 30, 167));
     text-align: center;
-    box-shadow: inset 0 0 0 2px #ecec09;    
- 
+    box-shadow: inset 0 0 0 2px #ecec09;
+
 }
 
 main {
@@ -244,6 +244,26 @@ img {
 }
 
 /*Media Queries*/
+
+/*Nav Bar*/
+@media screen and (max-width:800px) {
+    #nav_menu {
+        flex-direction: column;
+    }
+
+    #nav_menu li a {
+        border-top: 3px solid #ffffff;
+        border-right: 3px solid #ffffff;
+        border-left: 3px solid #ffffff;
+
+    }
+
+    #nav_menu li a.lastitem {
+        border-bottom: 3px solid #ffffff;
+        border-right: 3px solid #ffffff;
+    }
+
+}
 
 
 /*Handstands*/
